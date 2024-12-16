@@ -1,0 +1,138 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #ffffff;
+    color: #333;
+}
+header {
+    background: #006400;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+header h1 {
+    font-size: 2rem; /* Регулира размера на заглавието */
+    margin: 0;
+    padding: 10px 0;
+    color: #fff; /* Цветът на текста е бял за видимост на тъмен фон */
+}
+header nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 0;
+    margin: 0;
+}
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+main {
+    margin-top: 100px;
+    padding: 20px;
+}
+
+
+.contact-container {
+    max-width: 600px;
+    margin: 50px auto;
+    text-align: center;
+    padding: 20px;
+    border-radius: 10px;
+    background: #f9f9f9;
+    position: relative;
+    overflow: hidden;
+}
+
+.contact-container::before, 
+.contact-container::after {
+    content: "";
+    position: absolute;
+    top: -50px;
+    left: -50px;
+    width: 150%;
+    height: 150%;
+    background-image: url('leaves.png'); /* Replace with your leaves image */
+    background-size: cover;
+    opacity: 0.1;
+    z-index: -1;
+}
+
+h1 {
+    color: #006400;
+    margin-bottom: 20px;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.form-group {
+    text-align: left;
+}
+
+label {
+    font-weight: bold;
+    margin-bottom: 5px;
+    display: block;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+input:focus, textarea:focus {
+    outline: none;
+    border-color: #006400;
+    box-shadow: 0 0 5px rgba(0, 100, 0, 0.5);
+}
+
+textarea {
+    resize: none;
+}
+
+.submit-button {
+    background: #006400;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background 0.3s;
+}
+
+.submit-button:hover {
+    background: #004d00;
+}
+footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+}
+
+footer nav {
+    margin: 0.5rem 0;
+}
+
+footer nav a {
+    color: #FFA500;
+}

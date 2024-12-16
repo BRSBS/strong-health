@@ -1,0 +1,122 @@
+/* Общи настройки */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    line-height: 1.6;
+}
+
+h1, h2, h3 {
+    color: green;
+}
+
+a {
+    color: #FFA500;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Контейнер */
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+header .logo {
+    position: absolute; /* Позиционира логото независимо от другите елементи */
+    top: 10px; /* Отстояние от горния край */
+    left: 10px; /* Отстояние от левия край */
+}
+
+header .logo img {
+    width: 50px; /* Регулирайте ширината според вашите нужди */
+    height: auto; /* Поддържа пропорциите на изображението */
+    border-radius: 5px; /* По желание – заоблени краища */
+}
+
+
+header {
+    background: #006400;
+    color: #fff;
+    padding: 1rem 0;
+
+}
+
+
+header h1 {
+    font-size: 2rem; /* Регулира размера на заглавието */
+    margin: 0;
+    padding: 10px 0;
+    color: #fff; /* Цветът на текста е бял за видимост на тъмен фон */
+}
+
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    color: #fff;
+    font-weight: bold;
+}
+
+/* Hero Section */
+.hero {
+    background: url('logo.jpg') no-repeat center center/cover;
+    color: #000000;
+    text-align: center;
+    padding: 4rem 0;
+}
+
+.hero h2 {
+    font-size: 2rem;
+}
+
+.hero p {
+    font-size: 1.2rem;
+}
+
+/* Features Section */
+.features {
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem 0;
+    gap: 20px;
+}
+
+.features article {
+    flex: 1;
+    background: #f9f9f9;
+    padding: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    text-align: center;
+}
+
+/* Footer */
+footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+}
+
+footer nav {
+    margin: 0.5rem 0;
+}
+
+footer nav a {
+    color: #FFA500;
+}
